@@ -1,0 +1,44 @@
+05/03/2025
+
+Device:
+
+Add MiCharge
+sepolicy: Allow hal_camera_default to access sys_thermal_flash_state
+sepolicy: Allow cameraserver to search directories in sysfs_leds
+camera: Cap max_brightness
+rootdir: Label brightness node correctly
+sepolicy: Address a cameraserver neverallow
+camera: Add enabled bool for finished workarounds
+camera: Implement setTorchModeExt
+Implement supportsSetTorchModeExt
+Implement torch light control
+Add feature flag for IPSEC_TUNNEL_MIGRATION
+move to aidl bootctrl hal
+Build DSPVolumeSynchronizer
+parts: Add support for 60Hz in Landscape in Per-App-RR
+parts: fixup! Fix setting default thermal profile
+parts: Automatically determine thermal profile for apps
+parts: Add {navigation, video} thermal profiles
+parts: Switch back to thermal profiles
+parts: Introduce Display Satutaion Service and TileUtils
+parts: Add permissions and whitelist for Xiaomi parts
+parts: Refactor BootCompletedReceiver
+parts: Start parts services as early as possible on bootup
+parts: Update overrideHdrTypes API for U
+parts: Override HDR types for Dolby Vision
+parts: Partially import parts from sm8350-common
+sepolicy: Resolve denials for hal_dms_default to write to property_socket
+Add support for dolby music
+Reverts to fix Dolby Atmos support
+Drop unnecessary SKUs and media config
+Build QtiTelephonyCompat
+Turn off persist.vendor.radio.poweron_opt
+sepolicy: Remove duplicate snxxx AIDL rules
+Update blobs and firmware from V816.0.14.0.UMNMIXM
+Optimize native executables for Cortex-A510
+
+Kernel:
+Merge KERNEL.PLATFORM.1.0.r1-18500-kernel.0
+Merge ASB-2025-02-05_12-5.10
+and a few improvements
+
