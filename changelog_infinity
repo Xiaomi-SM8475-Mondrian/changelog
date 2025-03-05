@@ -1,35 +1,15 @@
-05/03/2025
+The changes listed below were added gradually after several tests and validations / Los cambios listados a continuación fueron añadidos de manera gradual después de varios tests y validaciones:
+
+(05/03/2025)
 
 Device:
-
 Add MiCharge
-sepolicy: Allow hal_camera_default to access sys_thermal_flash_state
-sepolicy: Allow cameraserver to search directories in sysfs_leds
-camera: Cap max_brightness
-rootdir: Label brightness node correctly
-sepolicy: Address a cameraserver neverallow
-camera: Add enabled bool for finished workarounds
-camera: Implement setTorchModeExt
-Implement supportsSetTorchModeExt
 Implement torch light control
 Add feature flag for IPSEC_TUNNEL_MIGRATION
 move to aidl bootctrl hal
 Build DSPVolumeSynchronizer
-parts: Add support for 60Hz in Landscape in Per-App-RR
-parts: fixup! Fix setting default thermal profile
-parts: Automatically determine thermal profile for apps
-parts: Add {navigation, video} thermal profiles
-parts: Switch back to thermal profiles
-parts: Introduce Display Satutaion Service and TileUtils
-parts: Add permissions and whitelist for Xiaomi parts
-parts: Refactor BootCompletedReceiver
-parts: Start parts services as early as possible on bootup
-parts: Update overrideHdrTypes API for U
-parts: Override HDR types for Dolby Vision
-parts: Partially import parts from sm8350-common
-sepolicy: Resolve denials for hal_dms_default to write to property_socket
-Add support for dolby music
-Reverts to fix Dolby Atmos support
+Added Parts
+Added Dolby
 Drop unnecessary SKUs and media config
 Build QtiTelephonyCompat
 Turn off persist.vendor.radio.poweron_opt
@@ -42,3 +22,18 @@ Merge KERNEL.PLATFORM.1.0.r1-18500-kernel.0
 Merge ASB-2025-02-05_12-5.10
 and a few improvements
 
+Kernel Modules:
+Merge tag 'LA.VENDOR.1.0.r1-27000-WAIPIO.QSSI15.0' wlan/qcacld-3.0
+Merge tag 'LA.VENDOR.1.0.r1-27000-WAIPIO.QSSI15.0' wlan/fw-api
+Merge tag 'LA.VENDOR.1.0.r1-27000-WAIPIO.QSSI15.0' eva-kernel
+Merge tag 'DISPLAY.LA.2.0.r1-13400-WAIPIO.0' display-drivers
+Merge tag 'LA.VENDOR.1.0.r1-27000-WAIPIO.QSSI15.0' dataipa
+Merge tag 'LA.VENDOR.1.0.r1-27000-WAIPIO.QSSI15.0' cvp-kernel
+Merge tag 'CAMERA.LA.2.0.r1-12600-WAIPIO.0' camera-kernel
+Merge tag 'LA.VENDOR.1.0.r1-27000-WAIPIO.QSSI15.0' audio-kernel-ar
+
+hardware/xiaomi
+dolby: Make sure to persist value after toggling QS tile
+dolby: Make bass enhancer available on speakers as well
+dolby: Add custom profile
+dolby: Add translation values-es
